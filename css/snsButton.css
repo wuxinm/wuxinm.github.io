@@ -1,0 +1,144 @@
+#sns-button {
+	position: absolute;
+	top: 67.5%;
+	left: 48%;
+	z-index: 3;
+	padding-top: 0em;
+	width: 4.0em;
+	height: 4.0em;
+	border: none;
+	border-radius: 50%;
+	background: none;
+	background-color: #898989;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.5em;
+	text-transform: uppercase;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+}
+
+.sns-wrapper {
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+	background: transparent;
+	opacity: 0;
+	-webkit-transition: all .5s ease 0.5s;
+	-moz-transition: all .5s ease 0.5s;
+	transition: all .5s ease 0.5s;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+	pointer-events: none;
+	visibility: hidden;
+}
+
+.sns-wrapper li {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	top: -20.7em;
+	left: 23.2em;
+	overflow: hidden;
+	list-style: none;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transfrom: rotate(45deg);
+	-webkit-transform-origin: 100% 100%;
+	-moz-transform-origin: 100% 100%;
+	transform-origin: 100% 100%;
+	pointer-events: none;
+}
+
+.sns-wrapper li a {
+	position: absolute;
+	display: block;
+	width: 14.5em;
+	height: 14.5em;
+	border-radius: 50%;
+	background: #898989;
+	background: -webkit-radial-gradient(transparent 35%, #898989 35%);
+	background: -moz-radial-gradient(transparent 35%, #898989 35%);
+	background: radial-gradient(transparent 35%, #898989 35%);
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.2em;
+	line-height: 2;
+	-webkit-transform: rotate(-45deg) scale(1);
+	-moz-transform: rotate(-45deg) scale(1);
+	-ms-transform: rotate(-45deg) scale(1);
+	transform: rotate(-45deg) scale(1);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	pointer-events: auto;
+}
+
+.sns-wrapper img {
+	margin-top: 15px;
+
+}
+
+.sns-wrapper #twitter-icon {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.sns-wrapper #facebook-icon {
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+}
+
+.opened-nav {
+	border-radius: 50%;
+	opacity: 1;
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	pointer-events: auto;
+	visibility: visible;
+}
+
+.opened-nav li {
+	-webkit-transition: all .5s ease;
+	-moz-transition: all .5s ease;
+	transition: all .5s ease;
+}
+
+.opened-nav li:first-child {
+	-webkit-transform: rotate(-47deg);
+	-moz-transform: rotate(-47deg);
+	-ms-transform: rotate(-47deg);
+	transform: rotate(-47deg);
+}
+
+.opened-nav li:nth-child(3) {
+	-webkit-transform: rotate(138deg);
+	-moz-transform: rotate(138deg);
+	-ms-transform: rotate(138deg);
+	transform: rotate(138deg);
+}
+
+
+.cn-wrapper li a:hover,
+.cn-wrapper li a:active,
+.cn-wrapper li a:focus {
+	background: -webkit-radial-gradient(transparent 25%, #449e6a 35%);
+	background: -moz-radial-gradient(transparent 25%, #449e6a 35%);
+	background: radial-gradient(transparent 35%, #449e6a 35%);
+}
