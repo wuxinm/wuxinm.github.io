@@ -254,14 +254,6 @@ body{
 	height: 90%;
 }
 
-.tab-section::-webkit-scrollbar { 
-    display: none; 
-}
-
-.tab-section::-moz-scrollbar { 
-    display: none; 
-}
-
 .tab-header {
 	/*border-bottom: 1px dotted #000;*/
 	height: 12%;
@@ -278,7 +270,7 @@ body{
 	padding-top: 15px;
 	width: 100%;
 	height: 20%;
-	margin-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .tab-info span {
@@ -319,7 +311,7 @@ body{
 	padding-top: 15px;
 	width: 100%;
 	height: 26%;
-	margin-bottom: 5px;
+	margin-bottom: 30px;
 }
 
 /*-----------------------------*\
@@ -368,10 +360,6 @@ body{
 	height: 40%;
 }
 
-.champ-info::-webkit-scrollbar { 
-    display: none; 
-}
-
 .alert img {
 	position: relative;
 	z-index: 1;
@@ -393,4 +381,22 @@ body{
 	text-align: center;
 	font-size: 1em;
 	top: -10px;
+}
+
+/*-----------------------------*\
+	$tabRESUME
+\*-----------------------------*/
+
+#myresume .resume-info {
+	margin: 30px 20px;
+}
+
+#myresume span {
+	font-size: 18px;
+}
+
+#myresume a {
+	margin-left: 20px;
+	margin-bottom: 5px;
+	float: right;
 }
