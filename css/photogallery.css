@@ -3,8 +3,8 @@ body{
 }
 
 .container{
-	width: 100%;
-	height: 95%;
+	width: auto;
+	height: 740px;
 	max-width: 900px;
 	margin-top: 20px;
 	font-weight: bold;
@@ -242,12 +242,17 @@ body{
 	width: 85%;
 	height: 73%;
 	top: -0.5em;
-	left: 5em;
+	left: 8em;
+}
+
+#title-pic{
+	margin-left: 80px;
+	margin-top: -20px;
 }
 
 .photo {
 	position: relative;
-	height: 100%;
+	height: auto;
 	width: 90%;
 	overflow: auto;
 }

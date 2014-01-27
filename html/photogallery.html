@@ -20,7 +20,7 @@
 		//images = new Array();
 		img_path = "../img/photos/";
 		$(document).ready(function(){
-			for(var i=1; i<=6; i++){
+			for(var i=1; i<=9; i++){
 				img.src = img_path + i + ".jpg";
 				$('.photo').append('<div class="col-xs-6 col-md-4"><a href="'+img.src+'" class="thumbnail" data-lightbox="gallery"><img src='+img.src+'></a></div>');
 			}
@@ -36,6 +36,7 @@
 		<div class="main-div">
 			<a href="#" id="navButton" class="nav-menu-trigger"><span>Menu</span></a>
 			<div class="main-section">
+				<img src="../img/920.png" id="title-pic">
 				<div class="photo">
 				</div>
 			</div>
