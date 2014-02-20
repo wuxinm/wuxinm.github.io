@@ -157,9 +157,6 @@ $(document).ready(function(){
 		anim.start();
 		
 		//loading pictures from folder
-		var index = 1;
-		var timer = setInterval(loadPics,100);
-	
 		function loadPics(){
 			if(index > 40){
 				clearInterval(timer);
@@ -174,14 +171,13 @@ $(document).ready(function(){
 			var img_front = new Image();
 			img_front.src = 'images/' + (index) + '.png';
 	
-			img_back.onload = function(){
-				array.push(img_back);
-			};
-			img_front.onload = function(){
-				array.push(img_front);
-				index ++;
-			};
+			array.push(img_back);
+			array.push(img_front);
+			index ++;
 		}
+		var index = 1;
+		var timer = setInterval(loadPics,100);
+	
 	});
 });
 
@@ -290,7 +286,7 @@ function Card(index){
 		stroke:'black',
 		strokeWidth:4,
 	});
-	this.cardFront = new Kinetic.Image({
+	this.cardFront = new Kinetic.Image ({
 		image:array[2*index-1],
 		offset:[50,50],
 		width:100,
